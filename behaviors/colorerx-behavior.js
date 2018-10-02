@@ -137,7 +137,7 @@ var kitTable = probable.createTableFromSizes([
     }
   ],
   [
-    100,
+    50,
     // Name
     {
       collection: 'nasaimageofthedaygallery',
@@ -192,7 +192,7 @@ var kitTable = probable.createTableFromSizes([
     }
   ],
   [
-    100,
+    120,
     // Etchings
     {
       query: 'etching',
