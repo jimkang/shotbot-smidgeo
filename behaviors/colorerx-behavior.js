@@ -141,7 +141,8 @@ function generateRun(kit) {
     quant: kit.quantMin + probable.roll(kit.quantMax - kit.quantMin),
     grayscale: kit.grayscale,
     recolorMode: 'random',
-    showBase: probable.roll(100) < kit.showBaseChance ? 'yes' : 'no'
+    showBase: probable.roll(100) < kit.showBaseChance ? 'yes' : 'no',
+    opacityPercentOverBase: probable.rollDie(70) + 30
   };
 }
 
