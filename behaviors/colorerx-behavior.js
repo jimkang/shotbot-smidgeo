@@ -129,8 +129,8 @@ var kitTable = probable.createTableFromSizes([
       collection: 'visibleearthcollection',
       quantMin: 32,
       quantMax: 128,
-      showBaseChance: 40,
-      overlayOpacityMin: 30,
+      showBaseChance: 66,
+      overlayOpacityMin: 20,
       overlayOpacityMax: 99,
       grayscale: 'yes',
       minimumValueDifference: 0.4
