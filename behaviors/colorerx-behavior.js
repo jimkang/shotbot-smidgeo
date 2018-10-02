@@ -111,7 +111,7 @@ function generateImageURL(done) {
     sb(assembleImageURL, done)
   );
 
-  function assembleImageURL({ url, collection, title, detailsURL }) {
+  function assembleImageURL({ url, collection, title, sourceURL }) {
     const numberOfRuns = probable.roll(4) === 0 ? probable.rollDie(4) : 1;
     const baseColorerURL =
       'http://jimkang.com/colorer-web/#displaySrcImage=no&srcImgUrl=' + url;
@@ -129,7 +129,7 @@ function generateImageURL(done) {
     done(null, {
       url: colorerURL,
       altText: text,
-      caption: text + ` <a href="${detailsURL}">Details</a>`
+      caption: text + ` <a href="${sourceURL}">Source</a>, <a href="${colorerURL}">Colorer</a>`
     });
   }
 }
@@ -142,7 +142,8 @@ function generateRun(kit) {
     grayscale: kit.grayscale,
     recolorMode: 'random',
     showBase: probable.roll(100) < kit.showBaseChance ? 'yes' : 'no',
-    opacityPercentOverBase: probable.rollDie(70) + 30
+    opacityPercentOverBase: probable.rollDie(70) + 30,
+    minimumValueDifference: 0.2
   };
 }
 
