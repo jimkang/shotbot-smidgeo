@@ -142,11 +142,13 @@ var kitTable = probable.createTableFromSizes([
     {
       collection: 'nasaimageofthedaygallery',
       quantMin: 32,
-      quantMax: 192,
-      showBaseChance: 50,
-      overlayOpacityMin: 30,
+      quantMax: 144,
+      showBaseChance: 30,
+      overlayOpacityMin: 40,
       overlayOpacityMax: 99,
-      grayscale: 'yes'
+      grayscale: 'yes',
+      minimumValueDifference: 0.4,
+      numberOfRetriesToAvoidSingleColor: 8
     }
   ],
   [
@@ -263,8 +265,12 @@ function generateRun(kit) {
     grayscale: kit.grayscale,
     recolorMode: 'random',
     showBase: probable.roll(100) < kit.showBaseChance ? 'yes' : 'no',
-    opacityPercentOverBase: kit.overlayOpacityMin + probable.roll(kit.overlayOpacityMax - kit.overlayOpacityMin),
-    minimumValueDifference: kit.minimumValueDifference || 0.2
+    opacityPercentOverBase:
+      kit.overlayOpacityMin +
+      probable.roll(kit.overlayOpacityMax - kit.overlayOpacityMin),
+    minimumValueDifference: kit.minimumValueDifference || 0.2,
+    numberOfRetriesToAvoidSingleColor:
+      kit.numberOfRetriesToAvoidSingleColor || 5
   };
 }
 
