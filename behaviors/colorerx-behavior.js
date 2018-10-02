@@ -111,7 +111,7 @@ function generateImageURL(done) {
     sb(assembleImageURL, done)
   );
 
-  function assembleImageURL({ url, collection, title, sourceURL }) {
+  function assembleImageURL({ url, collection, title, detailsURL }) {
     const numberOfRuns = probable.roll(4) === 0 ? probable.rollDie(4) : 1;
     const baseColorerURL =
       'http://jimkang.com/colorer-web/#displaySrcImage=no&srcImgUrl=' + url;
@@ -129,7 +129,7 @@ function generateImageURL(done) {
     done(null, {
       url: colorerURL,
       altText: text,
-      caption: text + ` <a href="${sourceURL}">Source</a>, <a href="${colorerURL}">Colorer</a>`
+      caption: text + ` <a href="${detailsURL}">Source</a>, <a href="${colorerURL}">Colorer</a>`
     });
   }
 }
