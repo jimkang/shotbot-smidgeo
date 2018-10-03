@@ -201,7 +201,8 @@ var kitTable = probable.createTableFromSizes([
       showBaseChance: 25,
       overlayOpacityMin: 30,
       overlayOpacityMax: 99,
-      grayscale: 'no'
+      grayscale: 'no',
+      numberOfRetriesToAvoidSingleColor: 8
     }
   ],
   [
