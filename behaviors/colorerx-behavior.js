@@ -228,8 +228,8 @@ function generateImageURL(done) {
       query: kit.query,
       mediatype: 'image',
       fileExtensions: ['jpg', 'jpeg', 'png'],
-      minimumSize: 50000,
-      maximumSize: 2500000
+      minimumSize: 100000,
+      maximumSize: 5000000
     },
     sb(assembleImageURL, done)
   );
