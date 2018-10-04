@@ -192,7 +192,7 @@ var kitTable = probable.createTableFromSizes([
     }
   ],
   [
-    120,
+    200,
     // Etchings
     {
       query: 'etching',
