@@ -297,44 +297,6 @@ module.exports = {
   archive: {
     name: 'Colorer Bot',
     title: 'Colorer Bot',
-    idPrefix: 'coloring',
-    homeLink: 'https://smidgeo.com/bots/colorer/',
-    rootPath: '/usr/share/nginx/html/bots/colorer',
-    footerHTML: `<footer>
-    <p>By <a href="https://smidgeo.com/notes/deathmtn">Jim Kang</a> and Alex Dorsk</p>
-    <p><a href="http://jimkang.com/colorer-web/">Do your own recoloring!</a></p>
-    <p><a href="https://smidgeo.com/bots/colorer/rss/index.rss">Subscribe to RSS.</a></p>
-</footer>`,
-    maxEntriesPerPage: 20,
-    generateRSS: true,
-    fileAbstractionType: 'LocalGit',
-    archiveBaseURL: 'https://smidgeo.com/bots/colorer',
-    rssFeedOpts: {
-      feed_url: 'https://smidgeo.com/bots/colorer/rss/index.rss',
-      site_url: 'https://smidgeo.com/bots/colorer/'
-    }
-  }
-};
-
-module.exports = {
-  //postingTargets: ['archive', 'mastodon', 'twitter'],
-  postingTargets: ['archive'],
-  generateImageURL,
-  shouldAutoCrop: true,
-  webimageOpts: {
-    viewportOpts: {
-      width: 1280
-    },
-    screenshotOpts: {
-      fullPage: true
-    },
-    autocrop: {
-      cropOnlyFrames: false
-    }
-  },
-  archive: {
-    name: 'Colorer Bot',
-    title: 'Colorer Bot (experimental)',
     idPrefix: 'coloring-',
     homeLink: 'https://smidgeo.com/bots/colorer/',
     rootPath: '/usr/share/nginx/html/bots/colorer',
