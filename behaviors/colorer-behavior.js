@@ -279,8 +279,7 @@ function generateRun(kit) {
 }
 
 module.exports = {
-  //postingTargets: ['archive', 'mastodon', 'twitter'],
-  postingTargets: ['archive'],
+  postingTargets: ['archive', 'mastodon', 'twitter'],
   generateImageURL,
   shouldAutoCrop: true,
   webimageOpts: {
