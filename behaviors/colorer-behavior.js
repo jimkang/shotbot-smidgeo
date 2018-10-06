@@ -251,13 +251,20 @@ function generateImageURL(done) {
     const text = `Recoloring of "${title}" ${collectionMention}in the Internet Archive`;
     const colorerURL =
       baseColorerURL + '&runs=' + encodeURIComponent(JSON.stringify(runs));
+    const caption =
+      text +
+      ` | <a href="${detailsURL}">Original</a> | <a href="${colorerURL}">Colorer source</a>`;
+    const noHTMLCaption =
+      text + ` | Original: ${detailsURL} | Colorer source: ${colorerURL}`;
 
     done(null, {
       url: colorerURL,
       altText: text,
-      caption:
-        text +
-        ` | <a href="${detailsURL}">Original</a> | <a href="${colorerURL}">Colorer source</a>`
+      caption,
+      targetTexts: {
+        mastodon: noHTMLCaption,
+        twitter: noHTMLCaption
+      }
     });
   }
 }

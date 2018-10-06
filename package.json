@@ -19,7 +19,8 @@
   "homepage": "https://github.com/jimkang/shotbot",
   "devDependencies": {},
   "dependencies": {
+    "@jimkang/post-it": "^1.1.1",
     "random-internet-archive": "^1.1.1",
-    "run-shotbot": "^1.1.3"
+    "run-shotbot": "^1.2.1"
   }
 }
