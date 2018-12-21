@@ -237,7 +237,7 @@ function generateImageURL(done) {
   function assembleImageURL({ url, collection, title, detailsURL }) {
     const numberOfRuns = probable.roll(10) === 0 ? probable.rollDie(4) : 1;
     const baseColorerURL =
-      'http://jimkang.com/colorer-web/#displaySrcImage=no&srcImgUrl=' + url;
+      'http://jimkang.com/colorer-web/#displaySrcImage=no&hideUi=yes&srcImgUrl=' + url;
     var runs = [];
 
     for (var i = 0; i < numberOfRuns; ++i) {
