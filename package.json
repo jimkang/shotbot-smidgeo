@@ -20,6 +20,7 @@
   "devDependencies": {},
   "dependencies": {
     "@jimkang/post-it": "^1.1.1",
+    "good-ia-source-image-probable-def": "^1.0.0",
     "random-internet-archive": "^1.1.1",
     "run-shotbot": "^1.2.1"
   }
