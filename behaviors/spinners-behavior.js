@@ -25,8 +25,8 @@ module.exports = {
     screenshotOpts: {
       fullPage: true
     },
-    burstCount: 24,
-    timeBetweenBursts: 1000 / 12,
+    burstCount: 48,
+    timeBetweenBursts: 1000 / 8,
     makeBurstsIntoAnimatedGif: true
   },
   archive: {
