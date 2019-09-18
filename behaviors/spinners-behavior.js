@@ -26,7 +26,7 @@ module.exports = {
       fullPage: true
     },
     burstCount: 48,
-    timeBetweenBursts: 1000 / 8,
+    timeBetweenBursts: 1000 / 12,
     makeBurstsIntoAnimatedGif: true
   },
   archive: {
