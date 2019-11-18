@@ -30,9 +30,9 @@ module.exports = {
     makeBurstsIntoAnimatedGif: true
   },
   archive: {
-    name: 'Spinners',
-    title: 'Spinners',
-    idPrefix: 'slopcube-',
+    name: 'slopcube',
+    title: 'Slop Cube',
+    idPrefix: 'cube-',
     homeLink: 'https://smidgeo.com/bots/slopcube/',
     rootPath: '/usr/share/nginx/html/bots/slopcube',
     footerHTML: `<footer>
